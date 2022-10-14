@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url('../top/pexels-moose-photos-1037996.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-size: 50px;
+    color: #c6e8e2;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 50px;
+    font-weight: 900;
+}
+nav{
+    padding: 15px 0;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Secular One', sans-serif;
+    color: #f7b7b5;
+    transition: 0.8s;
+}
+a:hover{
+    color: #e57975;
+    transition: 0.3s;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
+.tt{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.txt{
+    font-size: 30px;
+    color: #fd7873;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+.text{
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left: 60px;
+}
+h1{
+    font-size: 60px;
+    float: left;
+    line-height:  110px;
+    color: #eef0ef;
+    font-family: 'Secular One', sans-serif;
+
+}

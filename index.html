@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bilah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="style icon" type="x-icon" href="headphone.png">
+    
+        <style>
+            *{
+    margin: 0;
+}
+body{
+    background-image: url('../top/pexels-moose-photos-1037996.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-size: 50px;
+    color: #c6e8e2;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 50px;
+    font-weight: 900;
+}
+nav{
+    padding: 15px 0;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Secular One', sans-serif;
+    color: #f7b7b5;
+    transition: 0.8s;
+}
+a:hover{
+    color: #e57975;
+    transition: 0.3s;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
+.tt{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.txt{
+    font-size: 30px;
+    color: #fd7873;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+.text{
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left: 60px;
+}
+h1{
+    font-size: 60px;
+    float: left;
+    line-height:  110px;
+    color: #eef0ef;
+    font-family: 'Secular One', sans-serif;
+
+}
+</style>
+</head>
+<body>
+    
+    <nav><p>Music en ligne</p>
+        <ul><a href="">Home</a></ul>
+        <ul><a href="">More</a></ul>
+        <ul><a href="">Playlist</a></ul>
+    </nav>
+
+    <div class="tt">
+        <img src="jouer.png" id="icon" >
+        <p class="txt">play this Music</p>
+    </div>
+    <audio id="Mysong">
+        <source src="Morad - Mama me dice  GALLERY SESSION.mp3" type="audio/mp3">
+    </audio>
+    <div class="text">
+        <h1>THE REAL SOUND</h1>
+    </div>
+    <script>
+        var Mysong = document.getElementById("Mysong");
+        var icon = document.getElementById("icon");
+        
+        icon.onclick=function(){
+            if(Mysong.paused){
+                Mysong.play();
+                icon.src ="bouton-pause.png";
+            }else{
+                Mysong.pause();
+                icon.src ="jouer.png";
+            }
+        }
+    </script>
+</body>
+</html>
